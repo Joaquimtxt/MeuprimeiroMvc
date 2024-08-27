@@ -4,7 +4,7 @@
 }
 
 <h1>Alunos: </h1>
-<table> 
+<table>
     <thead>
         <tr>
             <th>Id</th>
@@ -13,4 +13,17 @@
             <th>Matrícula</th>
         </tr>
     </thead>
+
+    <tbody>
+        <!-- -->
+        @foreach (var aluno in Model)
+        {
+            <tr>
+                <td>@aluno.AlunoId</td>
+                <td>@aluno.Nome</td>
+                <td>@aluno.Email</td>
+                <td>@aluno.RM</td>
+            </tr>
+        }
+    </tbody>
 </table>
