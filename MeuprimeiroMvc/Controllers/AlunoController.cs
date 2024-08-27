@@ -17,16 +17,13 @@ namespace MeuprimeiroMvc.Controllers
             //Criar uma lista de Alunos
             List<Aluno> listaAlunos = new List<Aluno>();
             //Adicinar os Objetos Alunos na Lista Alunos
-            //listaAlunos.Add(a1);
-            //listaAlunos.Add(a2);
-            //listaAlunos.Add(a3);
-            //listaAlunos.Add(a4);
-            //listaAlunos.Add(a5);
-            //listaAlunos.Add(a6);
-            for (int i = 0; i < listaAlunos.Count; i++)
-            {
-                listaAlunos.Add(listaAlunos[i]);
-            }
+            listaAlunos.Add(a1);
+            listaAlunos.Add(a2);
+            listaAlunos.Add(a3);
+            listaAlunos.Add(a4);
+            listaAlunos.Add(a5);
+            listaAlunos.Add(a6);
+
 
             //Enviando a lista de alunos por parâmetro na View Index
             return View(listaAlunos);
